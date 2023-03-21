@@ -22,6 +22,7 @@ def solution(n,works):
             return 0
         heappush(m_works,a+1)
     # 잔업이 있는경우 피로도 도출
+    answer = 0
     for i in m_works:
         answer += i**2
     return answer
