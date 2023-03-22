@@ -5,7 +5,7 @@
 # 12시 58분 여러번 탐색 구현
 # 1시 19분 예외처리 후 첫번쨰 제출 -> 78%에서 시간 초과
 # 어떻게 해결해야할까요? -> 1시 30분 해결방법이 안떠오름
-
+# 여러분들의 도움을 받아 오전 10시 22분 temp 배열을 2차원 배열로 수정
 
 
 import sys
@@ -34,13 +34,14 @@ def find(result):
     return result
 
 def once():
-    temp = []
+    temp=[[0]*N for _ in range(N)]
     result = []
     for i in range(N):
         for j in range(N):
-            if [i,j] not in temp:
+            if not temp[i][j]:
                 ally = find([[i,j]])
-                temp.extend(ally)
+                for k0,k1 in ally:
+                    temp[k0][k1] = 1
                 if len(ally) != 1:
                     result.append(ally)
     return result
