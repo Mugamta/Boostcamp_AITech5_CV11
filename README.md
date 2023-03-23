@@ -19,4 +19,5 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |1주차|X|X|[이준하 - 백트래킹](https://school.programmers.co.kr/learn/courses/30/lessons/60059)|[이지유 - 동적계획법](https://school.programmers.co.kr/learn/courses/30/lessons/12905?language=python3)|X|
 |2주차|[서지훈 - BFS](https://www.acmicpc.net/problem/1600)|[이지유 - 수학](https://www.acmicpc.net/problem/1711)|[이채원 - 자료구조](https://www.acmicpc.net/problem/1302)|[최지욱 - 그리디 알고리즘](https://school.programmers.co.kr/learn/courses/30/lessons/42884)|X|
-|n주차|[???]()|[???]()|[???]()|[???]()|[???]()|
+|3주차|[서지훈 - 그리디 알고리즘, 우선순위 큐](https://www.acmicpc.net/problem/1202)|[이준하 - 우선순위 큐](https://school.programmers.co.kr/learn/courses/30/lessons/12927)|[이지유 - BFS](https://www.acmicpc.net/problem/16234)|[최지욱 - 구간 합](https://www.acmicpc.net/problem/11660)|[이채원 - ]()|
+|4주차|[서지훈 - ]()|[???]()|[???]()|[???]()|[???]()|
