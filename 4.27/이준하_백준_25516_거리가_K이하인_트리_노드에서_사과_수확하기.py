@@ -1,39 +1,30 @@
 import sys
-input = sys.stdin.readline
+input=sys.stdin.readline
+sys.setrecursionlimit(10**9)
 
 N,K=map(int,input().split())
 
-tree = [ [] for _ in range(N) ]
-for _ in range(N-1):
+tree=[ [] for _ in range(N+1) ]
+for i in range(N-1):
     p,c=map(int,input().split())
     tree[p].append(c)
     tree[c].append(p)
 
-apples = list(map(int,input().split()))
+apple=list(map(int,input().split()))
+visit=[False]*(N+1)
 
-def bfs(graph, start_node):
-    distance = 0
-    visited = list() 
-    queue = list()
-    count = 0
-    queue.append(start_node) 
+total=0
 
-    while queue: 
-        node = queue.pop(0) 
+def DFS(Node,level):
+    global total
+    visit[Node]=True
+    if level<=K and apple[Node]==1:
+        total+=1
 
-        if distance > K:
-            break
+    for i in tree[Node]:
+        if not visit[i]:
+            DFS(i,level+1)
 
-        if node not in visited: 
-            visited.append(node)
-            queue.extend(graph[node])
-            count += apples[node]
-        
-    # 깊이를 측정하는 방법이 뭘까요!?
-        distance += 1
+DFS(0,0)
 
-    print("bfs - ", visited)
-    return visited
-    
-
-bfs(tree, 0)
+print(total)
