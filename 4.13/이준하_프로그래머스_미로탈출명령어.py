@@ -57,7 +57,7 @@ def solution(n, m, x, y, r, c, k):
         if b != -1:
             answer = answer[:b]+'rl'*(key//2)+answer[b:]
         elif c != -1:
-            answer = answer[:c]+'lr'*(key//2)+answer[c:]
+            answer = answer[:c]+'rl'*(key//2)+answer[c:]
         else:
             answer = answer + 'rl'*(key//2)
         
