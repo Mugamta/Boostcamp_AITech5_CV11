@@ -1,3 +1,6 @@
+#풀었던 문제
+#도대체 이 풀이는 어떻게 푼걸까요?
+
 def solution(p):
     if p=='': 
         return p
