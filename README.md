@@ -21,3 +21,8 @@
 |2주차|[서지훈 - BFS](https://www.acmicpc.net/problem/1600)|[이지유 - 수학](https://www.acmicpc.net/problem/1711)|[이채원 - 자료구조](https://www.acmicpc.net/problem/1302)|[최지욱 - 그리디 알고리즘](https://school.programmers.co.kr/learn/courses/30/lessons/42884)|X|
 |3주차|[서지훈 - 그리디 알고리즘, 우선순위 큐](https://www.acmicpc.net/problem/1202)|[이준하 - 우선순위 큐](https://school.programmers.co.kr/learn/courses/30/lessons/12927)|[이지유 - BFS](https://www.acmicpc.net/problem/16234)|[최지욱 - 구간 합](https://www.acmicpc.net/problem/11660)|x|
 |5주차|[서지훈 - DFS](https://www.acmicpc.net/problem/9466)|X|[이지유 - 구현, 시뮬레이션](https://www.acmicpc.net/problem/21610)|[이채원 - 정렬](https://school.programmers.co.kr/learn/courses/30/lessons/152995)|[이준하 - 구현](https://www.acmicpc.net/problem/20056)|
+
+<br/>
+
+### Level 종료 이후
+자율적으로 기술 면접과 알고리즘 스터디를 화/목 9시에 진행하기로 함(프로젝트 일정에 따라 변동)
