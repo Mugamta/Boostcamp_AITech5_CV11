@@ -43,6 +43,7 @@ def solo():
             union(u,v)
             Roadnum += 1
             answer += d
+            if Roadnum == N-1 : break
     if Roadnum == N-1 : 
         print(answer)
     else : 
