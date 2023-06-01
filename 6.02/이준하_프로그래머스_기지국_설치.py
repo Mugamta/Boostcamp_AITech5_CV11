@@ -15,5 +15,3 @@ def solution(n, stations, w):
         answer += ceil((n - start + 1) / W)
     
     return answer
-
-6.02\이준하_프로그래머스_기지국_설치.py
