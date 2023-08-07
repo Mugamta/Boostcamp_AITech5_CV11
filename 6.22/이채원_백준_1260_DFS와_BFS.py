@@ -8,7 +8,7 @@ def dfs(V) :
             if visited[c-1] == False :
                 dfs(c)
 
-                
+
 N, M, V = map(int, sys.stdin.readline().split()) #4 5 1 
 arr = list(list(map(int, sys.stdin.readline().split())) for _ in range(M)) 
 graph = list([] for _ in range(N))
@@ -61,9 +61,6 @@ while d : #BFS
     node = d.popleft()
     visited[V-1] = True
     answer.append(str(node))
-    # if len(answer) == N :
-    #     print(' '.join(answer))
-    #     break
     if len(graph[node-1])==0 :  #더이상 갈 수 있는 노드가 없을 때
         continue
     else : #갈 수 있는 노드가 있을 때
