@@ -9,7 +9,7 @@ def main():
 
     N, M = map(int, input().split())
 
-    graph = {i: set() for i in range(1, N+1)}  # 인접 정점을 집합으로 변경
+    graph = {i: set() for i in range(1, N+1)}  # 인접 노드를 집합으로 설정
 
     ## 그래프 생성
     for _ in range(M):
