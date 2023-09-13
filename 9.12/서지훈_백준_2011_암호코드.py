@@ -16,7 +16,6 @@ def func():
         if 10 <= int(s[i - 1:i + 1]) <= 26:
             dp[i] += dp[i - 2]
 
-    print(dp)
     return dp[length - 1] % 1000000
 
 
