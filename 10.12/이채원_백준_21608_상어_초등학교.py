@@ -2,8 +2,8 @@ import sys
 
 N =  int(input())
 arr = list(list(map(int, sys.stdin.readline().split())) for _ in range(N*N))
-cls = list(list( 0 for _ in range(N)) for _ in range(N))
-ij = [[-1,0], [0,-1], [1,0], [0,1]]
+cls = list(list( 0 for _ in range(N)) for _ in range(N)) #좌석배치표
+ij = [[-1,0], [0,-1], [1,0], [0,1]] #인접 칸 (상하좌우)
 
 #자리 배치하기
 

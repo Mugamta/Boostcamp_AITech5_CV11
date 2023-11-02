@@ -23,7 +23,7 @@ for i in range(T) :
         if j>temp :
             temp = j
         else :
-            answer += temp - j
+            answer += (temp - j)
 
-    print(f"answer : {answer}")
-    # print(answer)
+    # print(f"answer : {answer}")
+    print(answer)

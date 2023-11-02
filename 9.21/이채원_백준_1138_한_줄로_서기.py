@@ -22,4 +22,3 @@ for i in range(N) :
     ans[j] = str(i+1)
 
 print(' '.join(ans))
-# print(ans)

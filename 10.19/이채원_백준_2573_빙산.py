@@ -9,7 +9,7 @@ S = [[0,-1], [0,1], [-1,0], [1,0]] #4가지 인접 방향
 
 def isone(arr) : #빙하가 한 덩어리인지 검사
     d = deque()
-    visited = list(list(False for _ in range(M)) for _ in range(M))
+    visited = list(list(False for _ in range(M)) for _ in range(N))
     start_temp = False
     #시작 지점 데큐에 집어넣기
     for i in range(N) :
@@ -23,7 +23,7 @@ def isone(arr) : #빙하가 한 덩어리인지 검사
             break
     #시작 지점부터 한 덩어리인 빙하 visit
     while d :
-        # print(f"d : {d}")
+        print(f"d : {d}")
         row, col = d.popleft()
         #상하좌우 검사
         for s in range(4) :
@@ -70,8 +70,8 @@ while one :
                 #인접한 바다 칸 개수만큼 빙하 녹음
                 temp_arr[row][col] = max(0, arr[row][col]-sea)
     
-    arr = temp_arr #array upadate
-    # print(f"year:{year}, arr : {arr}")
+    arr = temp_arr.copy() #array upadate
+    print(f"year:{year}, arr : {arr}")
 
     #빙하가 나뉘어졌는지 검사
     one = isone(arr)

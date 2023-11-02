@@ -17,14 +17,13 @@ def dfs(node, d) :
     if node == B :
         arr_.append(d)
 
-
     for i in arr[node] :
         if not visited[i] :
             dfs(i, d)
 
 dfs(A, 0)
 
-if len(arr_) == 0 :
+if len(arr_) == 0 : 
     print(-1)
 else :
     print(arr_[0]-1)

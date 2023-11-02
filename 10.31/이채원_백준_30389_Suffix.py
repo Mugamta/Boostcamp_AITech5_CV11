@@ -1,6 +1,5 @@
 import sys
 
-
 N = int(input())
 S = []
 for _ in range(N) :
@@ -17,6 +16,7 @@ for i in range(N) :
             s = S[i][len(S[i])-j-1:]
             if s not in temp[(i+1)%2] :
                 temp[i%2].append(s)
+        # for k in range(len)        
             # print(f"word = {S[i]}, s={s}, temp={temp}")
 print(len(temp[(N+1)%2]))
 

@@ -13,7 +13,7 @@ else :
     answer = []
     lst = []
 
-    for i in range(1, N-1) : #송곳니의 간격 후보
+    for i in range(1, N//2+1) : #송곳니의 간격 후보
         lst.append(arr[i]-arr[0])
 
     # print(f"lst={lst}")
