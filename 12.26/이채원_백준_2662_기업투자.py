@@ -15,7 +15,7 @@ index = first_arr.index(mx)
 
 dp[0][-1] = mx
 dp[0][index] = 1
-# print(dp[0])
+
 
 temp = list([0]*(M+1) for _ in range(2*M))
 for i in range(1, N) :
