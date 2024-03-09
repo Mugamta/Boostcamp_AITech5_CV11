@@ -31,9 +31,10 @@ def solution() :
 
                 if 0<dc<=A and 0<dr<=B : #보드 범위 안에 있다면
                     #다른 로봇과 충돌하는지 검사
-                    for k,[rr, cc,_] in enumerate(robot) : 
-                        if dc == cc and dr == rr : 
-                            return(f"Robot {r} crashes into robot {k+1}")
+                    for k,[cc, rr, _] in enumerate(robot) : 
+                        if k+1 != r :
+                            if dc == cc and dr == rr : 
+                                return(f"Robot {r} crashes into robot {k+1}")
                             
                     robot[r-1][0] = dc #로봇 위치 바꿔주기
                     robot[r-1][1] = dr
