@@ -8,7 +8,7 @@ def main():
     
     ## 누적합을 이용하여 연산의 중복을 막을 수 있음
     ## 4개 지점의 누적합을 이용하여 모든 사각형의 내부 이익 연산 가능
-    ## square[r-k, c-k ~ r, k] = arr[r][c] - arr[r-k][c] - arr[r][c-k] + arr[r-k][c-k]
+    ## square[r-k, c-k ~ r, c] = arr[r][c] - arr[r-k][c] - arr[r][c-k] + arr[r-k][c-k]
     for r in range(N):
         for c in range(N-1):
             arr[r][c+1] += arr[r][c]
