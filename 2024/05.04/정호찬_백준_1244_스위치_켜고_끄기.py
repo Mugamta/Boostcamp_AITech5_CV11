@@ -6,7 +6,6 @@ import sys
 
 input = sys.stdin.readline
 
-
 N = int(input())
 switches = list(map(int, input().split()))
 S_N = int(input())
