@@ -5,7 +5,7 @@ Worst case
 '''
 
 def solution(topping):
-    dict = dict()
+    dict = {}
     for num in topping:
         if num not in dict:
             dict[num] = 1
