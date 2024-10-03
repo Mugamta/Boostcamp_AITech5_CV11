@@ -1,3 +1,8 @@
+'''
+메모리 : 10.4MB
+시간 : 10.99ms
+'''
+
 from collections import deque
 
 def find(start, end, maps):
