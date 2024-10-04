@@ -12,6 +12,8 @@
 # [한번의 합연산으로 전부 합가는 -> 구간 합은 누적합으로 해결]
 
 누적합 추천 문제
+https://school.programmers.co.kr/learn/courses/30/lessons/92344
+카카오 2022 블라인드 테스트 : 파괴되지 않는 건물
 """
 import sys
 input = sys.stdin.readline
