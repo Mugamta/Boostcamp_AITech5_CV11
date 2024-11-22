@@ -16,11 +16,11 @@ def solution(n_row, n_col, arr):
     move = [(0, 1), (1, 0)]
     dp = [[float('inf')] * n_col for _ in range(n_row)]
 
-    queue = deque([(0, 0, 1)])
+    queue = deque([(0, 0)])
     dp[0][0] = 1
 
     while queue:
-        r, c, cnt = queue.popleft()
+        r, c = queue.popleft()
 
         for booster in range(1, arr[r][c] + 1):
             for dr, dc in move:
@@ -32,11 +32,11 @@ def solution(n_row, n_col, arr):
                     continue
 
                 # 돌아왔다면 무시
-                if dp[nr][nc] <= cnt + 1:
+                if dp[nr][nc] <= dp[r][c] + 1:
                     continue
 
-                dp[nr][nc] = cnt + 1
-                queue.append((nr, nc, cnt + 1))
+                dp[nr][nc] = dp[r][c] + 1
+                queue.append((nr, nc))
 
     return dp[n_row-1][n_col-1] - 1
 
